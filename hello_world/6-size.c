@@ -1,22 +1,23 @@
 #include <stdio.h>
-/**
-* main - Entry point
-*
-*Return: Always 0 (Sucess)
-*/
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int intType;
-float floatType;
-double doubleType;
-char charType;
+int a;
+long int b;
+long long int c;
+char d;
+float f;
 
-/*sizeof evaluates the size of a variable*/
-printf("Size of char: %d byte\n", sizeof(charType));
-printf("Size of int: %d bytes\n", sizeof(intType));
-printf("size of long int: %d bytes\n", sizeof(longType));
-printf("Size of double: %d bytes\n", sizeof(doubleType));
-printf("Size of float: %d bytes\n", sizeof(floatType));
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+printf("size of float: %lu byte(s)\n", (unsigned long)sizeof(f));
+
 return (0);
 }
