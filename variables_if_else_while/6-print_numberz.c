@@ -7,12 +7,14 @@
 *
 *Return: Always 0 (Sucess)
  */
+
 int main(void)
 {
 	int r;
 
-	for (r = 0; r < 10; r++)
-		putchar('%d', r);
+	for (r = '0'; r <= '9'; r++)
+		putchar(r);
 	putchar('\n');
 
 	return (0);
+}
