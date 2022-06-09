@@ -3,20 +3,20 @@
 #include <time.h>
 
 /**
-  * main Entry - point
+  * main - Entry point
   *
-  *Return / Always 0 (Sucess)
+  *Return: Always 0 (Sucess)
   */
-
-int main (void)
+int main(void)
 {
 	char low, e, q;
+
 	e = 'e',
-	  q = 'q';
+	q = 'q';
 
 	for (low = 'a'; low <= 'z'; low++)
 	{
-		if (low!= e && low !=q)
+		if (low != e && low != q)
 		putchar(low);
 	}
 	putchar('\n');
