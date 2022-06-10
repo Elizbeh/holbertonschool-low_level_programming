@@ -7,16 +7,13 @@
 * Return: Always 0 (Sucess)
 */
 
-int main()
+int main(void)
 {
-	char alphabet;
+	char c;
+
+	for (c = 'z'; c >= 'a'; c--)
+		putchar(c);
 	putchar('\n');
-	alphabet=getcha
-		printf("\n\nReverse case of %c is :  ",alphabet);
-	if(islower(alphabet))
-		putchar(toupper(alphabet));
-	else 
-// must be an uppercase character
-		printf("%c",tolower(alphabet)) ;
-	printf("\n\n\t\t\tCoding is Fun !\n\n\n");
-	return 0;
+
+	return (0);
+}
