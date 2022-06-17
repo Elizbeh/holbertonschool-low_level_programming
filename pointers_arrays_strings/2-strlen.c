@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * strlen  - check the code
- * @s
+ * _strlen  - check the code
+ * @s:
  * Return: Always 0.
 */
 
