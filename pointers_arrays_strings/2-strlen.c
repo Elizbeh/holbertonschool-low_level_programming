@@ -2,7 +2,7 @@
 
 /**
  * _strlen  - check the code
- * @s:
+ * @s: parametre
  * Return: Always 0.
 */
 
