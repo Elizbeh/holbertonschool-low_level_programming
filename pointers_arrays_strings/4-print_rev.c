@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_string - check the code
+ * print_rev - check the code
  * @s: param
  * Return: nothing.
 */
@@ -14,7 +14,7 @@ void print_rev(char *s)
 		m++;
 	while (m > 0)
 	{
-		_putchar(s[m- 1]);
+		_putchar(s[m - 1]);
 		m--;
 	}
 	_putchar('\n');
