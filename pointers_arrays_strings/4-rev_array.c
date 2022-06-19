@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * _strcmp - fonction
- * @s1: param
- * @s2: param
- * Return: 0 ou n
- */
+ * reverse_array - main
+ * @a: an array of integers
+ * @n: the number of elements to swap
+ * Return: nothing.
+*/
 
-int _strcmp(char *s1, char *s2)
+void reverse_array(int *a, int n)
 {
-	int i;
+	int i = 0;
+	int j;
 
-	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
+	for (i = 0; i < n / 2; i++)
 	{
-		if (s1[i] != s2[i])
-			break;
+		j = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = j;
 	}
-	return (s1[i] - s2[i]);
 }
