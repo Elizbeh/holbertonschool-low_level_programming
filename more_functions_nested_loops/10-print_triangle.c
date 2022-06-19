@@ -1,30 +1,31 @@
 #include "main.h"
 
 /**
- * print_triangle - Write a function that prints a
- * triangle, followed by a new line.
- *
+ * print_triangle - check the code
+ * @size: param
  * Return: Always 0.
-*/
+ */
 
 void print_triangle(int size)
-
 {
-	int i, j, n;
-/* Input number of rows from user */
-	_putchar('10');
-	        /* Input number of rows from user */
-		    scanf("%d", &n);
+	int space;
+	int signe;
+	int ligne;
 
-		        for(i=1; i<=n; i++)
-			{
-				/* Print i number of stars */
-				for(j=1; j<=i; j++)
-				{
-					printf("#");
-				}
-				/* Move to next line */
-				printf("\n");
-			}
-			return 0;
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	for (ligne = 0; ligne < size; ligne++)
+	{
+		for (space = 1; space < size - ligne; space++)
+		{
+			_putchar(' ');
+		}
+		for (signe = 0; signe <= size - space; signe++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
+	}
 }
