@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * main - void print_alphabet_x10(void);
- *
- * Return: Always 0.
- */
+* print_alphabet_x10 - function
+* Return: 0
+*/
 
-int main(void)
+void print_alphabet_x10(void)
 {
-	char ch = 'a';
+	int i;
+	int b;
 
-	for ( ; ch <= 'z'; ++ch)
+	for (b = 0; b < 10; b++)
 	{
-		_putchar(ch);
-		_putchar('\n')
+		for (i = 97; i < 123; i++)
+		{
+			_putchar(i);
+		}
+		_putchar('\n');
 	}
-	return (0);
 }
