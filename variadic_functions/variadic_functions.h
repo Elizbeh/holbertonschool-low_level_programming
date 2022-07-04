@@ -5,7 +5,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-typedef struct print{
+typedef struct print
+{
 	char *c;
 	void (*f)(va_list args);
 } print;
