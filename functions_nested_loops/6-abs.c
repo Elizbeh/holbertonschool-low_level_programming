@@ -1,20 +1,21 @@
 #include "main.h"
-#include<stdio.h>
 
 /**
- * main - int _abs(int);
- *
- * Return: Always 0.
- */
+*_abs - Main functioin
+* Return: 0
+* @n: paramètre
+*/
 
-int main(void)
+int _abs(int n)
 {
-	 int m = abs(200);
-	 int n = abs(-400);
 
-	    _putchar(abs);
-	    _putchar(abs)
-
-	    return (0);
+	if (n >= 0)
+	{
+		return (n);
+	}
+	else
+	{
+		return (-n);
+	}
+	_putchar('\n');
 }
-
