@@ -1,4 +1,4 @@
-/** 
+/**
  * sum_dlistint - main function
  * @head: param1
  * Return: int
